@@ -15,6 +15,7 @@ import {
 	LuStar,
 	LuNewspaper,
 	LuMoveRight,
+	LuCalendarDays,
 } from "react-icons/lu";
 import Image from "next/image";
 import roundImg from "@/public/images/banner-round.png";
@@ -26,10 +27,10 @@ function PublicHomePage() {
 				className="hero min-h-screen"
 				style={{
 					backgroundImage:
-						"url(https://images.pexels.com/photos/939702/pexels-photo-939702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+						"url(https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
 				}}
 			>
-				<div className="hero-overlay bg-opacity-60"></div>
+				<div className="hero-overlay bg-opacity-70"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-xl">
 						<h1 className="mb-5  font-bold flex flex-col">
@@ -529,6 +530,10 @@ function PublicHomePage() {
 							/>
 						</div>
 						<div className=" space-y-2 mt-5">
+							<p className="text-slate-500 flex gap-2 items-center">
+								<LuCalendarDays className="inline-block stroke-current" />{" "}
+								27/04/2024
+							</p>
 							<h2 className="font-semibold text-2xl">
 								Build secure life for the poor
 							</h2>
@@ -557,6 +562,10 @@ function PublicHomePage() {
 							/>
 						</div>
 						<div className=" space-y-2 mt-5">
+							<p className="text-slate-500 flex gap-2 items-center">
+								<LuCalendarDays className="inline-block stroke-current" />{" "}
+								27/04/2024
+							</p>
 							<h2 className="font-semibold text-2xl">
 								Build secure life for the poor
 							</h2>
@@ -585,6 +594,10 @@ function PublicHomePage() {
 							/>
 						</div>
 						<div className=" space-y-2 mt-5">
+							<p className="text-slate-500 flex gap-2 items-center">
+								<LuCalendarDays className="inline-block stroke-current" />{" "}
+								27/04/2024
+							</p>
 							<h2 className="font-semibold text-2xl">
 								Build secure life for the poor
 							</h2>
@@ -613,6 +626,10 @@ function PublicHomePage() {
 							/>
 						</div>
 						<div className=" space-y-2 mt-5">
+							<p className="text-slate-500 flex gap-2 items-center">
+								<LuCalendarDays className="inline-block stroke-current" />{" "}
+								27/04/2024
+							</p>
 							<h2 className="font-semibold text-2xl">
 								Build secure life for the poor
 							</h2>
@@ -641,34 +658,10 @@ function PublicHomePage() {
 							/>
 						</div>
 						<div className=" space-y-2 mt-5">
-							<h2 className="font-semibold text-2xl">
-								Build secure life for the poor
-							</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Asperiores esse quae veniam...
+							<p className="text-slate-500 flex gap-2 items-center">
+								<LuCalendarDays className="inline-block stroke-current" />{" "}
+								27/04/2024
 							</p>
-							<div className="text-right">
-								<Link
-									href="/"
-									className="link link-hover"
-								>
-									Read more{" "}
-									<LuMoveRight className="inline stroke-primary" />
-								</Link>
-							</div>
-						</div>
-					</div>
-					<div className="sm:w-[calc((100%_-_2_*_1.25rem_)_/_3)] rounded-xl overflow-hidden p-3 bg-primary/10">
-						<div className=" h-32 relative rounded-xl overflow-hidden">
-							<Image
-								fill
-								src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-								alt=""
-								className="object-cover"
-							/>
-						</div>
-						<div className=" space-y-2 mt-5">
 							<h2 className="font-semibold text-2xl">
 								Build secure life for the poor
 							</h2>
