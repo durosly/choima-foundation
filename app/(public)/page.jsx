@@ -13,6 +13,8 @@ import {
 	LuPersonStanding,
 	LuShrub,
 	LuStar,
+	LuNewspaper,
+	LuMoveRight,
 } from "react-icons/lu";
 import Image from "next/image";
 import roundImg from "@/public/images/banner-round.png";
@@ -474,6 +476,215 @@ function PublicHomePage() {
 								AICMC.
 							</h3>
 							<p>Legal Adviser</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				style={{
+					backgroundImage:
+						"linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+				}}
+				className="text-center py-20 px-10 space-y-5 bg-no-repeat bg-cover bg-center text-white"
+			>
+				<h2 className="text-4xl font-bold">
+					Make a Statement In Support of The Society
+				</h2>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Minus blanditiis facere eius reiciendis velit, soluta
+					repellendus nam ad amet reprehenderit excepturi dolor
+					debitis molestias obcaecati perferendis id. Tenetur, earum.
+					Accusamus natus iure eligendi ducimus facere nobis provident
+					debitis eaque nam, qui ea aut ad aliquam doloremque,
+					corrupti quia, exercitationem nulla.
+				</p>
+				<Link
+					href="/"
+					className="btn btn-primary"
+				>
+					Donate now
+				</Link>
+			</div>
+
+			<div className="px-10">
+				<div>
+					<h2 className="text-xl">
+						<LuNewspaper className="inline-block stroke-indigo-700" />{" "}
+						Latest Blog
+					</h2>
+					<p className="text-4xl font-bold">
+						Latest news, articles and events
+					</p>
+				</div>
+				<div className="flex flex-col sm:flex-row gap-5 flex-wrap mt-10">
+					<div className="sm:w-[calc((100%_-_2_*_1.25rem_)_/_3)] rounded-xl overflow-hidden p-3 bg-primary/10">
+						<div className=" h-32 relative rounded-xl overflow-hidden">
+							<Image
+								fill
+								src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt=""
+								className="object-cover"
+							/>
+						</div>
+						<div className=" space-y-2 mt-5">
+							<h2 className="font-semibold text-2xl">
+								Build secure life for the poor
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Asperiores esse quae veniam...
+							</p>
+							<div className="text-right">
+								<Link
+									href="/"
+									className="link link-hover"
+								>
+									Read more{" "}
+									<LuMoveRight className="inline stroke-primary" />
+								</Link>
+							</div>
+						</div>
+					</div>
+					<div className="sm:w-[calc((100%_-_2_*_1.25rem_)_/_3)] rounded-xl overflow-hidden p-3 bg-primary/10">
+						<div className=" h-32 relative rounded-xl overflow-hidden">
+							<Image
+								fill
+								src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt=""
+								className="object-cover"
+							/>
+						</div>
+						<div className=" space-y-2 mt-5">
+							<h2 className="font-semibold text-2xl">
+								Build secure life for the poor
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Asperiores esse quae veniam...
+							</p>
+							<div className="text-right">
+								<Link
+									href="/"
+									className="link link-hover"
+								>
+									Read more{" "}
+									<LuMoveRight className="inline stroke-primary" />
+								</Link>
+							</div>
+						</div>
+					</div>
+					<div className="sm:w-[calc((100%_-_2_*_1.25rem_)_/_3)] rounded-xl overflow-hidden p-3 bg-primary/10">
+						<div className=" h-32 relative rounded-xl overflow-hidden">
+							<Image
+								fill
+								src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt=""
+								className="object-cover"
+							/>
+						</div>
+						<div className=" space-y-2 mt-5">
+							<h2 className="font-semibold text-2xl">
+								Build secure life for the poor
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Asperiores esse quae veniam...
+							</p>
+							<div className="text-right">
+								<Link
+									href="/"
+									className="link link-hover"
+								>
+									Read more{" "}
+									<LuMoveRight className="inline stroke-primary" />
+								</Link>
+							</div>
+						</div>
+					</div>
+					<div className="sm:w-[calc((100%_-_2_*_1.25rem_)_/_3)] rounded-xl overflow-hidden p-3 bg-primary/10">
+						<div className=" h-32 relative rounded-xl overflow-hidden">
+							<Image
+								fill
+								src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt=""
+								className="object-cover"
+							/>
+						</div>
+						<div className=" space-y-2 mt-5">
+							<h2 className="font-semibold text-2xl">
+								Build secure life for the poor
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Asperiores esse quae veniam...
+							</p>
+							<div className="text-right">
+								<Link
+									href="/"
+									className="link link-hover"
+								>
+									Read more{" "}
+									<LuMoveRight className="inline stroke-primary" />
+								</Link>
+							</div>
+						</div>
+					</div>
+					<div className="sm:w-[calc((100%_-_2_*_1.25rem_)_/_3)] rounded-xl overflow-hidden p-3 bg-primary/10">
+						<div className=" h-32 relative rounded-xl overflow-hidden">
+							<Image
+								fill
+								src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt=""
+								className="object-cover"
+							/>
+						</div>
+						<div className=" space-y-2 mt-5">
+							<h2 className="font-semibold text-2xl">
+								Build secure life for the poor
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Asperiores esse quae veniam...
+							</p>
+							<div className="text-right">
+								<Link
+									href="/"
+									className="link link-hover"
+								>
+									Read more{" "}
+									<LuMoveRight className="inline stroke-primary" />
+								</Link>
+							</div>
+						</div>
+					</div>
+					<div className="sm:w-[calc((100%_-_2_*_1.25rem_)_/_3)] rounded-xl overflow-hidden p-3 bg-primary/10">
+						<div className=" h-32 relative rounded-xl overflow-hidden">
+							<Image
+								fill
+								src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt=""
+								className="object-cover"
+							/>
+						</div>
+						<div className=" space-y-2 mt-5">
+							<h2 className="font-semibold text-2xl">
+								Build secure life for the poor
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Asperiores esse quae veniam...
+							</p>
+							<div className="text-right">
+								<Link
+									href="/"
+									className="link link-hover"
+								>
+									Read more{" "}
+									<LuMoveRight className="inline stroke-primary" />
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
