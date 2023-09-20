@@ -10,14 +10,19 @@ function NavBar() {
 			<div className="bg-black text-white py-2 px-5 flex items-center justify-end gap-5">
 				<div className="flex items-center gap-1">
 					<LuPhone className="w-5 h-5 stroke-white" />
-					<a href="tel: +234734568904">+234734568904</a>
+					<a
+						href="tel: +234734568904"
+						className="text-xs sm:text-base"
+					>
+						+234734568904
+					</a>
 				</div>
 				<a href="mailto: support@nice.com">
 					<LuMail className="w-5 h-5 stroke-white" />
 				</a>
 				<Link
 					href="/nice"
-					className="flex items-center gap-1 btn btn-sm btn-primary"
+					className="flex items-center gap-1 btn btn-xs sm:btn-sm btn-primary"
 				>
 					<LuDroplet className="w-5 h-5 stroke-white" />
 					<span>Donate</span>
