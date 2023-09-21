@@ -1,17 +1,15 @@
+import roundImg from "@/public/images/banner-round.png";
 import Image from "next/image";
 import Link from "next/link";
 import {
 	LuBook,
 	LuCalendarDays,
-	LuCheck,
 	LuGrip,
-	LuGripHorizontal,
 	LuHexagon,
 	LuMoveRight,
 	LuNewspaper,
 	LuStar,
 } from "react-icons/lu";
-import roundImg from "@/public/images/banner-round.png";
 
 function AboutUsPage() {
 	return (
