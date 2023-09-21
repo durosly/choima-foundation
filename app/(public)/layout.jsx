@@ -20,7 +20,7 @@ export default function PublicLayout({ children }) {
 				<main className="space-y-20">{children}</main>
 				<Footer />
 			</div>
-			<div className="drawer-side">
+			<div className="drawer-side z-50">
 				<label
 					htmlFor="my-drawer-3"
 					className="drawer-overlay"
