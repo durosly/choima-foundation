@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "@/public/images/logo.png";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 
 function Footer() {
 	return (
@@ -16,15 +17,31 @@ function Footer() {
 				<nav>
 					<header className="footer-title">Company</header>
 					<a className="link link-hover">About us</a>
-					<a className="link link-hover">Contact</a>
+					{/* <a className="link link-hover">Contact</a> */}
 					<a className="link link-hover">Volunter</a>
 					<a className="link link-hover">Become a sponsor</a>
 				</nav>
 				<nav>
-					<header className="footer-title">Legal</header>
-					<a className="link link-hover">Terms of use</a>
-					<a className="link link-hover">Privacy policy</a>
-					<a className="link link-hover">Cookie policy</a>
+					<header className="footer-title">Contact Us</header>
+					<a
+						href="tel: +234734568904"
+						className="link link-hover inline-flex gap-2 items-center"
+					>
+						<LuPhone className=" stroke-current" /> +234734568904
+					</a>
+					<a
+						href="mailto: support@nice.com"
+						className="link link-hover inline-flex gap-2 items-center"
+					>
+						<LuMail className="stroke-current" />
+						support@nice.com
+					</a>
+					<a className=" inline-flex gap-2 items-center">
+						<LuMapPin className="stroke-current" />
+						20, digbori street
+					</a>
+					{/* <a className="link link-hover">Privacy policy</a>
+					<a className="link link-hover">Cookie policy</a> */}
 				</nav>
 			</footer>
 			<footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
