@@ -28,7 +28,7 @@ function NavBar() {
 					<span>Donate</span>
 				</Link>
 			</div>
-			<div className="w-full sticky top-0 z-50 backdrop-blur-sm">
+			<div className="w-full sticky bg-white/50 top-0 z-50 backdrop-blur-sm">
 				<div className="navbar">
 					<div className="flex-none lg:hidden">
 						<label
