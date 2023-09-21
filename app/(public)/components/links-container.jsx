@@ -7,7 +7,7 @@ function LinksWrapper() {
 				<Link href="/">Home</Link>
 			</li>
 			<li>
-				<Link href="/">Programs</Link>
+				<Link href="/programs">Programs</Link>
 			</li>
 			<li>
 				<Link href="/about-us">About Us</Link>

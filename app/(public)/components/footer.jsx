@@ -23,6 +23,13 @@ function Footer() {
 					>
 						About us
 					</Link>
+					<Link
+						href="/programs"
+						className="link link-hover"
+					>
+						Programs / events
+					</Link>
+
 					{/* <a className="link link-hover">Contact</a> */}
 					<a className="link link-hover">Volunter</a>
 					<a className="link link-hover">Become a sponsor</a>
