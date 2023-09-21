@@ -1,5 +1,6 @@
-import Image from "next/image";
 import logo from "@/public/images/logo.png";
+import Image from "next/image";
+import Link from "next/link";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 
@@ -16,7 +17,12 @@ function Footer() {
 				</nav>
 				<nav>
 					<header className="footer-title">Company</header>
-					<a className="link link-hover">About us</a>
+					<Link
+						href="/about-us"
+						className="link link-hover"
+					>
+						About us
+					</Link>
 					{/* <a className="link link-hover">Contact</a> */}
 					<a className="link link-hover">Volunter</a>
 					<a className="link link-hover">Become a sponsor</a>
