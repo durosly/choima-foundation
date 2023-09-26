@@ -11,17 +11,17 @@ function NavBar() {
 				<div className="flex items-center gap-1">
 					<LuPhone className="w-5 h-5 stroke-white" />
 					<a
-						href="tel: +234734568904"
+						href="tel:+2348111461988"
 						className="text-xs sm:text-base"
 					>
-						+234734568904
+						+2348111461988
 					</a>
 				</div>
 				<a href="mailto: support@nice.com">
 					<LuMail className="w-5 h-5 stroke-white" />
 				</a>
 				<Link
-					href="/nice"
+					href="/support"
 					className="flex items-center gap-1 btn btn-xs sm:btn-sm btn-primary"
 				>
 					<LuDroplet className="w-5 h-5 stroke-white" />

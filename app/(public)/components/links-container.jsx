@@ -16,7 +16,7 @@ function LinksWrapper() {
 				<Link href="/contact-us">Contact</Link>
 			</li>
 			<li>
-				<Link href="/">Sponsorship</Link>
+				<Link href="/support">Sponsorship</Link>
 			</li>
 		</>
 	);
