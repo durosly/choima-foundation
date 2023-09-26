@@ -35,6 +35,20 @@ function AdminNewProgramPage() {
 				</div>
 				<div className="form-control">
 					<label
+						htmlFor="location"
+						className="label"
+					>
+						Location
+					</label>
+					<input
+						type="text"
+						name="location"
+						id="location"
+						className="input input-bordered"
+					/>
+				</div>
+				<div className="form-control">
+					<label
 						htmlFor="start-date"
 						className="label"
 					>
