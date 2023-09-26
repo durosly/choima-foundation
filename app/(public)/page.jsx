@@ -508,8 +508,12 @@ function PublicHomePage() {
 					Donate now
 				</Link>
 			</div>
-
-			<div className="px-10">
+			<div className="py-10 px-5 text-center">
+				<p className="text-2xl rounded-2xl italic border border-primary border-dashed inline-block p-5">
+					A helping hand can be a ray of sunshine in a cloudy world.
+				</p>
+			</div>
+			{/* <div className="px-10">
 				<div>
 					<h2 className="text-xl">
 						<LuNewspaper className="inline-block stroke-indigo-700" />{" "}
@@ -681,7 +685,7 @@ function PublicHomePage() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 }
