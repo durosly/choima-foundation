@@ -125,10 +125,20 @@ function ContactUsPage() {
 						<div className="flex gap-4 sm:gap-10">
 							<LuPhoneCall className="stroke-primary w-10 md:w-20 h-10 md:h-20" />
 							<div>
-								<h3 className="font-bold mb-2">Call Now</h3>
-								<p className="capitalize text-sm">
-									+234701234567
-								</p>
+								<h3 className="font-bold mb-2">Phonenumbers</h3>
+								<div className="flex flex-col">
+									<a href="tel:+2348111461988">
+										<span>Call:</span>
+										<span>+2348111461988</span>
+									</a>
+									<a
+										href="https://wa.me/+41779084193"
+										target="_blank"
+									>
+										<span>Whatsapp:</span>
+										<span>+41779084193</span>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
