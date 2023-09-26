@@ -1,11 +1,9 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
-import { MongoDBAdapter } from "@auth/mongodb-adapter";
-import clientPromise from "@/lib/connectDB";
+import connectMongo from "@/lib/connectDB";
 import UserModel from "@/models/user";
 
 export const options = {
-	adapter: MongoDBAdapter(clientPromise),
 	session: {
 		maxAge: 4 * 60 * 60, // 4 hours
 
@@ -30,6 +28,7 @@ export const options = {
 				password: { label: "Password", type: "password" },
 			},
 			async authorize(credentials) {
+				await connectMongo();
 				// Add logic here to look up the user from the credentials supplied
 				// console.log(credentials);
 				// const { email, password } = credentials
