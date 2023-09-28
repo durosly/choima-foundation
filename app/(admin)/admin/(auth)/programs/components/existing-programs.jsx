@@ -104,7 +104,7 @@ function ExistingPrograms() {
 								<h2 className="text-2xl font-bold">
 									{d.title}
 								</h2>
-								<p>{d.desc}</p>
+								<p className="line-clamp">{d.desc}</p>
 								<span
 									className={`badge ${
 										d.status === "published"
