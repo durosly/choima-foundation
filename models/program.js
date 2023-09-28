@@ -6,11 +6,10 @@ const programSchema = new mongoose.Schema({
 	cover_image: { type: String, default: "default.png" },
 	title: String,
 	desc: String,
-
 	created_at: { type: Date, default: Date.now },
 	location: String,
-	start_date: String,
-	end_date: String,
+	start_date: Date,
+	end_date: Date,
 	start_time: String,
 	end_time: String,
 	slug: { type: String, unique: true },
