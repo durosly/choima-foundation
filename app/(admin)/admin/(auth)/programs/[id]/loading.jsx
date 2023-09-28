@@ -1,5 +1,3 @@
-import React from "react";
-
 function loading() {
 	return (
 		<div className="px-5 sm:px-10">
