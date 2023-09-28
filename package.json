@@ -16,6 +16,7 @@
 		"cloudinary": "^1.41.0",
 		"eslint": "8.49.0",
 		"eslint-config-next": "^13.5.3",
+		"luxon": "^3.4.3",
 		"mongoose": "^7.5.3",
 		"mongoose-paginate-v2": "^1.7.4",
 		"next": "^13.5.3",
