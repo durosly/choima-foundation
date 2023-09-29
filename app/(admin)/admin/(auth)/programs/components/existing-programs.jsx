@@ -108,7 +108,7 @@ function ExistingPrograms() {
 								<p className="line-clamp">{d.desc}</p>
 								<span
 									className={`badge ${
-										d.status === "published"
+										d.status === "publish"
 											? "badge-success"
 											: d.status === "unpublished"
 											? "badge-warning"
