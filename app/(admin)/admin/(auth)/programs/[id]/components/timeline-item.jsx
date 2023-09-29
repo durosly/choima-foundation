@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import DeleteButton from "./timeline-delete-btn";
 
 function TimelineItem({ timeline }) {
 	return (
@@ -20,6 +21,10 @@ function TimelineItem({ timeline }) {
 			</div>
 			{/* Content */}
 			<div className="text-slate-500 text-sm">{timeline.summary}</div>
+			<DeleteButton
+				id={timeline.id}
+				program_id={timeline.program_id}
+			/>
 		</div>
 	);
 }
