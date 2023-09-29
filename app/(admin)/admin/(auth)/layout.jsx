@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LuPanelLeftOpen } from "react-icons/lu";
+import LogoutButton from "./components/logout-btn";
 
 function AdminLayout({ children }) {
 	return (
@@ -38,7 +39,7 @@ function AdminLayout({ children }) {
 						<Link href="/admin/messages">Messages</Link>
 					</li>
 					<li>
-						<button className="btn btn-sm btn-error">logout</button>
+						<LogoutButton />
 					</li>
 				</ul>
 			</div>
