@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import ProgramModel, { ProgramValidationSchema } from "@/models/program";
+import connectMongo from "@/lib/connectDB";
 
 async function createProgram(request) {
 	try {
@@ -24,7 +25,7 @@ async function createProgram(request) {
 				}
 			);
 		}
-
+		await connectMongo();
 		await ProgramModel.create(safe.data);
 
 		return NextResponse.json({ status: true, message: "success" });
