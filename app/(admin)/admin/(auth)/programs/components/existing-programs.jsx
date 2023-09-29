@@ -5,22 +5,26 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 
 function ExistingPrograms() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [data, setData] = useState([]);
 	const [page, setPage] = useState(0);
+	const [status, setStatus] = useState("all");
+	const [search, setSearch] = useState("");
 
-	async function loadData() {
+	async function loadData(current) {
 		setIsLoading(true);
 		try {
 			const response = await axios(
-				`/api/admin/programs?page=${page + 1}`
+				`/api/admin/programs?page=${current}&status=${status}&q=${search}`
 			);
 
 			if (response.data.status) {
-				setData(response.data.programs);
-				setPage((p) => p + 1);
+				const { data: programData } = response.data;
+				setData(programData);
+				setPage(current);
 			} else {
 				throw new Error(response.data.message);
 			}
@@ -31,8 +35,18 @@ function ExistingPrograms() {
 		}
 	}
 
+	function loadNew(newPage) {
+		loadData(newPage);
+	}
+
+	function queryNewData(e) {
+		e.preventDefault();
+
+		loadNew(page);
+	}
+
 	useEffect(() => {
-		loadData();
+		loadData(1);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
@@ -40,23 +54,31 @@ function ExistingPrograms() {
 			<form
 				action="/find-event"
 				className="my-5"
+				onSubmit={queryNewData}
 			>
 				<div className="join join-vertical sm:join-horizontal">
 					<select
 						className="select select-bordered join-item flex-1"
 						name="status"
 						id="status"
+						value={status}
+						onChange={(e) => setStatus(e.target.value)}
 					>
 						<option value="all">All</option>
-						<option value="published">Published</option>
+						<option value="publish">Published</option>
 						<option value="unpublished">Unpublished</option>
 					</select>
 					<input
 						type="search"
 						className="input input-bordered join-item rounded-l-md"
-						placeholder="Title..."
+						placeholder="search..."
+						value={search}
+						onChange={(e) => setSearch(e.target.value)}
 					/>
-					<button className="btn join-item rounded-r-md">
+					<button
+						disabled={isLoading}
+						className="btn join-item rounded-r-md"
+					>
 						Search
 					</button>
 				</div>
@@ -86,8 +108,8 @@ function ExistingPrograms() {
 							</div>
 						</div>
 					))
-				) : data && data?.length && data.length > 0 ? (
-					data.map((d) => (
+				) : data && data?.docs?.length && data.docs.length > 0 ? (
+					data.docs.map((d) => (
 						<div
 							key={d._id}
 							className=" flex flex-col sm:flex-row gap-3 border p-3 sm:p-5 rounded-2xl"
@@ -132,6 +154,26 @@ function ExistingPrograms() {
 				) : (
 					<div>Nothing to see here </div>
 				)}
+			</div>
+
+			<div className="flex gap-2 my-4">
+				<button
+					disabled={!data.hasPrevPage}
+					onClick={() => loadNew(page - 1)}
+					className="btn btn-sm btn-primary btn-outline"
+				>
+					<LuArrowLeft />
+				</button>
+				<button
+					disabled={!data.hasNextPage}
+					onClick={() => loadNew(page + 1)}
+					className="btn btn-sm btn-primary btn-outline"
+				>
+					<LuArrowRight />
+				</button>
+			</div>
+			<div className="flex justify-center ">
+				Page {data.page} of {data.totalPages}
 			</div>
 		</>
 	);
