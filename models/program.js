@@ -15,7 +15,7 @@ const programSchema = new mongoose.Schema({
 	slug: { type: String, unique: true },
 	status: {
 		type: String,
-		enum: ["private", "publish", "unpublished"],
+		enum: ["publish", "unpublished"],
 		default: "unpublished",
 	},
 });
