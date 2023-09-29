@@ -6,6 +6,7 @@ import { DateTime } from "luxon";
 import CoverImage from "./components/cover-image";
 import TimelineDisplay from "./components/timeline";
 import convertTo12HourFormat from "@/lib/formatTime";
+import StatusBtn from "./components/status-btn";
 
 async function AdminProgramsDetailsPage({ params: { id } }) {
 	await connectMongo();
@@ -66,6 +67,11 @@ async function AdminProgramsDetailsPage({ params: { id } }) {
 				</h3>
 				<TimelineDisplay id={id} />
 			</div>
+			<div className="divider">Actions</div>
+			<StatusBtn
+				id={id}
+				status={program.status}
+			/>
 		</div>
 	);
 }
