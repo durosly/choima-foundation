@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import slugify from "slugify";
 import { z } from "zod";
+import paginate from "mongoose-paginate-v2";
 
 const programSchema = new mongoose.Schema({
 	cover_image: { type: String, default: "default.png" },
@@ -19,6 +20,11 @@ const programSchema = new mongoose.Schema({
 		default: "unpublished",
 	},
 });
+
+programSchema.plugin(paginate);
+programSchema.index({ title: "text", desc: "text", location: "text" });
+programSchema.index({ desc: "text" });
+programSchema.index({ location: "text" });
 
 programSchema.pre("save", async function (next) {
 	const program = this;
