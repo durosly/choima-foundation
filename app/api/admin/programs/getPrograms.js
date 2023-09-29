@@ -8,27 +8,34 @@ async function getPrograms(request) {
 	try {
 		const { searchParams } = new URL(request.url);
 		const page = searchParams.get("page");
+		const status = searchParams.get("status");
+		const q = searchParams.get("q");
 
 		await connectMongo();
 
-		const programs = await ProgramModel.find({});
-		// .sort("-created_at")
-		// .limit(5)
-		// .offset((page - 1) * 5);
+		const query = {};
+
+		if (status && status !== "all") {
+			query.status = status;
+		}
+
+		if (!!q) {
+			query.$text = { $search: `\"${q}\"` };
+		}
+
+		const data = await ProgramModel.paginate(query, { page });
 
 		return NextResponse.json({
 			status: true,
 			message: "success",
-			programs,
+			data,
 		});
 	} catch (error) {
-		return new Response(
-			JSON.stringify({ status: false, message: error.message }),
-			{
-				status: 500,
-				headers: { "Content-Type": `application/json` },
-			}
-		);
+		console.log(error);
+		return new Response(JSON.stringify({ status: false, message: error }), {
+			status: 500,
+			headers: { "Content-Type": `application/json` },
+		});
 	}
 }
 
