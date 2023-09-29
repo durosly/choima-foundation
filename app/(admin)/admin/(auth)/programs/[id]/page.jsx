@@ -7,6 +7,7 @@ import CoverImage from "./components/cover-image";
 import TimelineDisplay from "./components/timeline";
 import convertTo12HourFormat from "@/lib/formatTime";
 import StatusBtn from "./components/status-btn";
+import DeleteBtn from "./components/delete-btn";
 
 async function AdminProgramsDetailsPage({ params: { id } }) {
 	await connectMongo();
@@ -72,6 +73,7 @@ async function AdminProgramsDetailsPage({ params: { id } }) {
 				id={id}
 				status={program.status}
 			/>
+			<DeleteBtn id={id} />
 		</div>
 	);
 }
