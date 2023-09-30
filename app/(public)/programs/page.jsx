@@ -4,6 +4,10 @@ import { LuCalendar, LuClock5, LuGrip, LuMapPin } from "react-icons/lu";
 import ExistingPrograms from "./components/existing-programs";
 import CoverImage from "../components/cover";
 
+export const metadata = {
+	title: "Programs",
+};
+
 function ProgramsPage() {
 	return (
 		<>

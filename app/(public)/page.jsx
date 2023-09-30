@@ -1,24 +1,25 @@
+import roundImg from "@/public/images/banner-round.png";
+import Image from "next/image";
 import Link from "next/link";
-import { TbSchool } from "react-icons/tb";
 import {
-	LuSoup,
-	LuSyringe,
-	LuDroplets,
-	LuHexagon,
 	LuCheck,
-	LuHeart,
-	LuGraduationCap,
+	LuDroplets,
 	LuGlassWater,
+	LuGraduationCap,
 	LuHammer,
+	LuHeart,
+	LuHexagon,
 	LuPersonStanding,
 	LuShrub,
+	LuSoup,
 	LuStar,
-	LuNewspaper,
-	LuMoveRight,
-	LuCalendarDays,
+	LuSyringe,
 } from "react-icons/lu";
-import Image from "next/image";
-import roundImg from "@/public/images/banner-round.png";
+import { TbSchool } from "react-icons/tb";
+
+export const metadata = {
+	title: "Welcome",
+};
 
 function PublicHomePage() {
 	return (

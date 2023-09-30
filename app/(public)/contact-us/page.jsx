@@ -2,6 +2,10 @@ import { LuGrip, LuMail, LuMapPin, LuPhoneCall } from "react-icons/lu";
 import ContactForm from "./components/contact-form";
 import CoverImage from "../components/cover";
 
+export const metadata = {
+	title: "Contact Us",
+};
+
 function ContactUsPage() {
 	return (
 		<>

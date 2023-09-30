@@ -12,6 +12,10 @@ import {
 } from "react-icons/lu";
 import CoverImage from "../components/cover";
 
+export const metadata = {
+	title: "About Us",
+};
+
 function AboutUsPage() {
 	return (
 		<>

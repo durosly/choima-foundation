@@ -1,7 +1,10 @@
 import React from "react";
-import { LuGrip } from "react-icons/lu";
 import { BsPaypal } from "react-icons/bs";
 import CoverImage from "../components/cover";
+
+export const metadata = {
+	title: "Support",
+};
 
 function SupportPage() {
 	return (
