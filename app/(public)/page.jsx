@@ -50,13 +50,13 @@ function PublicHomePage() {
 						</p>
 						<div className="flex flex-wrap gap-2 justify-center">
 							<Link
-								href="/"
+								href="/support"
 								className="btn btn-primary"
 							>
 								Get Involved
 							</Link>
 							<Link
-								href="/"
+								href="/about-us"
 								className="btn btn-outline btn-secondary"
 							>
 								Learn more
@@ -175,7 +175,7 @@ function PublicHomePage() {
 					</ul>
 					<div>
 						<Link
-							href="/"
+							href="/about-us"
 							className="btn btn-primary"
 						>
 							Learn more
@@ -503,7 +503,7 @@ function PublicHomePage() {
 					corrupti quia, exercitationem nulla.
 				</p>
 				<Link
-					href="/"
+					href="/support"
 					className="btn btn-primary"
 				>
 					Donate now
