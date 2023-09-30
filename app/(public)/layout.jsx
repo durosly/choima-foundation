@@ -3,10 +3,12 @@ import Image from "next/image";
 import LinksWrapper from "./components/links-container";
 import Footer from "@/app/(public)/components/footer";
 import logo from "@/public/images/logo.png";
+import { NavigationEvents } from "./components/navigation-event";
 
 export default function PublicLayout({ children }) {
 	return (
 		<div className="drawer">
+			<NavigationEvents />
 			<input
 				id="my-drawer-3"
 				type="checkbox"
