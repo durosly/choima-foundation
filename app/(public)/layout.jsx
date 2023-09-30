@@ -5,18 +5,6 @@ import Footer from "@/app/(public)/components/footer";
 import logo from "@/public/images/logo.png";
 import { NavigationEvents } from "./components/navigation-event";
 
-export const metadata = {
-	title: {
-		template: "%s | Chioma Foundation ",
-		default: "Helping to make the world a better place", // a default is required when creating a template
-	},
-	description:
-		"At Chioma Onwenonye foundation, we believe in making a positive impact, one step at a time. Our foundation is built on the pillars of compassion, empowerment, and change. With a heartfelt commitment to bettering the world around us, we are dedicated to creating a brighter future for all",
-	keywords: ["children", "Poor", "Charity", "Helping"],
-	metadataBase: new URL("https://acme.com"),
-	themeColor: "#284FFB",
-};
-
 export default function PublicLayout({ children }) {
 	return (
 		<div className="drawer">
