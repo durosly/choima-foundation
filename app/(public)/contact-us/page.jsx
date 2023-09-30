@@ -1,4 +1,5 @@
 import { LuGrip, LuMail, LuMapPin, LuPhoneCall } from "react-icons/lu";
+import ContactForm from "./components/contact-form";
 
 function ContactUsPage() {
 	return (
@@ -30,77 +31,7 @@ function ContactUsPage() {
 				</div>
 
 				<div className="flex flex-col md:flex-row gap-20 sm:gap-10 mt-10">
-					<form
-						action="/nice"
-						className="flex-1"
-					>
-						<div className="flex flex-col sm:flex-row sm:gap-10">
-							<div className="form-control flex-1">
-								<label
-									className="label justify-start"
-									htmlFor="name"
-								>
-									Your Name{" "}
-									<span className="text-red-600">*</span>
-								</label>
-								<input
-									type="text"
-									name="name"
-									id="name"
-									className="input input-bordered"
-								/>
-							</div>
-							<div className="form-control flex-1">
-								<label
-									className="label justify-start"
-									htmlFor="email"
-								>
-									Your Email{" "}
-									<span className="text-red-600">*</span>
-								</label>
-								<input
-									type="email"
-									name="email"
-									id="email"
-									className="input input-bordered"
-								/>
-							</div>
-						</div>
-						<div className="form-control">
-							<label
-								className="label justify-start"
-								htmlFor="address"
-							>
-								Address
-							</label>
-							<input
-								type="text"
-								name="address"
-								id="address"
-								className="input input-bordered"
-							/>
-						</div>
-						<div className="form-control">
-							<label
-								htmlFor="message"
-								className="label justify-start"
-							>
-								Message <span className="text-red-600">*</span>
-							</label>
-							<textarea
-								name="message"
-								id="message"
-								cols="30"
-								rows="5"
-								className="textarea textarea-bordered"
-							></textarea>
-						</div>
-						<div className="form-control mt-5">
-							<button className="btn btn-primary btn-block">
-								Send message
-							</button>
-						</div>
-					</form>
+					<ContactForm />
 					<div className="flex-1 space-y-5">
 						<div className="flex gap-4 sm:gap-10">
 							<LuMapPin className="stroke-primary w-10 md:w-20 h-10 md:h-20" />
