@@ -58,6 +58,8 @@ function reducer(state, action) {
 				newMarkList = [...new Set(newMarkList)];
 			}
 			return { ...state, mark: [...newMarkList] };
+		case "EMPTY_MARK":
+			return { ...state, mark: [] };
 
 		default:
 			return state;

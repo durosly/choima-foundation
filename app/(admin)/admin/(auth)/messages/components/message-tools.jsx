@@ -7,13 +7,16 @@ import {
 	LuTrash2,
 } from "react-icons/lu";
 import MessageContext from "./message-context";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import loadData from "./data-loader";
 import { useRouter } from "next/navigation";
+import deleteMessage from "./delete-request";
+import toast from "react-hot-toast";
 
 function MessageTools() {
 	const { state, dispatch } = useContext(MessageContext);
 	const router = useRouter();
+	const [isDeleting, setIsDeleting] = useState(false);
 
 	async function getData(current) {
 		const res = await loadData(current, state.search);
@@ -22,6 +25,24 @@ function MessageTools() {
 			dispatch({ type: "LOAD_ITEMS", data: res.data });
 		} else {
 			dispatch({ type: "ERROR", data: res.data.message });
+		}
+	}
+
+	async function deleteItem() {
+		if (isDeleting) return;
+		setIsDeleting(true);
+		const toastId = toast.loading("Deleting");
+		try {
+			const res = await deleteMessage(state.mark);
+			if (res.status) {
+				toast.success("Done", { id: toastId });
+				getData(state.page);
+				dispatch({ type: "EMPTY_MARK" });
+			}
+		} catch (error) {
+			toast.error(error.message, { id: toastId });
+		} finally {
+			setIsDeleting(false);
 		}
 	}
 
@@ -43,7 +64,7 @@ function MessageTools() {
 					<button
 						title="Refresh messages"
 						className="btn btn-ghost btn-sm"
-						onClick={() => router.refresh()}
+						onClick={() => getData(state.page)}
 					>
 						<LuRotateCw />
 					</button>
@@ -52,6 +73,8 @@ function MessageTools() {
 							<button
 								title="Delete selected messages"
 								className="btn btn-ghost btn-sm"
+								onClick={deleteItem}
+								disabled={isDeleting}
 							>
 								<LuTrash2 />
 							</button>
