@@ -12,7 +12,12 @@ const messageSchema = new mongoose.Schema({
 });
 
 messageSchema.plugin(paginate);
-// messageSchema.index({ title: "text", desc: "text", location: "text" });
+messageSchema.index({
+	name: "text",
+	email: "text",
+	address: "text",
+	message: "text",
+});
 // messageSchema.index({ desc: "text" });
 // messageSchema.index({ location: "text" });
 
