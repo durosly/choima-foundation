@@ -9,14 +9,15 @@ import {
 import MessageContext from "./message-context";
 import { useContext, useState } from "react";
 import loadData from "./data-loader";
-import { useRouter } from "next/navigation";
 import deleteMessage from "./delete-request";
 import toast from "react-hot-toast";
+import markMessagesAsRead from "./read-request";
 
 function MessageTools() {
 	const { state, dispatch } = useContext(MessageContext);
-	const router = useRouter();
+
 	const [isDeleting, setIsDeleting] = useState(false);
+	const [isMarking, setIsMarking] = useState(false);
 
 	async function getData(current) {
 		const res = await loadData(current, state.search);
@@ -25,6 +26,26 @@ function MessageTools() {
 			dispatch({ type: "LOAD_ITEMS", data: res.data });
 		} else {
 			dispatch({ type: "ERROR", data: res.data.message });
+		}
+	}
+
+	async function markMessage() {
+		if (isMarking) return;
+		setIsMarking(true);
+		const toastId = toast.loading("Marking as read...");
+		try {
+			const res = await markMessagesAsRead(state.mark);
+			if (res.status) {
+				toast.success("Done", { id: toastId });
+				getData(state.page);
+				dispatch({ type: "EMPTY_MARK" });
+			} else {
+				throw new Error(res.message);
+			}
+		} catch (error) {
+			toast.error(error.message, { id: toastId });
+		} finally {
+			setIsMarking(false);
 		}
 	}
 
@@ -38,6 +59,8 @@ function MessageTools() {
 				toast.success("Done", { id: toastId });
 				getData(state.page);
 				dispatch({ type: "EMPTY_MARK" });
+			} else {
+				throw new Error(res.message);
 			}
 		} catch (error) {
 			toast.error(error.message, { id: toastId });
@@ -81,6 +104,8 @@ function MessageTools() {
 							<button
 								title="Mark as open"
 								className="btn btn-ghost btn-sm"
+								onClick={markMessage}
+								disabled={isMarking}
 							>
 								<LuMailOpen />
 							</button>
