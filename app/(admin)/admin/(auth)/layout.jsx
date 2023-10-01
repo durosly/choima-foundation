@@ -4,7 +4,7 @@ import LogoutButton from "./components/logout-btn";
 
 function AdminLayout({ children }) {
 	return (
-		<div className="drawer lg:drawer-open">
+		<div className="drawer max-sm:block  lg:drawer-open">
 			<input
 				id="my-drawer-2"
 				type="checkbox"
