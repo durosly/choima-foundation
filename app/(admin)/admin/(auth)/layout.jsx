@@ -39,6 +39,9 @@ function AdminLayout({ children }) {
 						<Link href="/admin/messages">Messages</Link>
 					</li>
 					<li>
+						<Link href="/admin/mailer">Mailer</Link>
+					</li>
+					<li>
 						<LogoutButton />
 					</li>
 				</ul>
