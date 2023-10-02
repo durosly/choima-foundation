@@ -47,7 +47,7 @@ async function sendEmail(request) {
 		);
 
 		const options = {
-			from: `Choima Foundation <${process.env.SMTP_USERNAME}>`,
+			from: `${process.env.SMTP_INFO} <${process.env.SMTP_USERNAME}>`,
 			to: email,
 			subject: title,
 			html,
