@@ -12,6 +12,9 @@ async function AdminMessageDetailsPage({ params: { id } }) {
 		notFound();
 	}
 
+	message.read = true;
+	await message.save();
+
 	return (
 		<div>
 			<div>
