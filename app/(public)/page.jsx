@@ -17,10 +17,6 @@ import {
 } from "react-icons/lu";
 import { TbSchool } from "react-icons/tb";
 
-export const metadata = {
-	title: "Welcome",
-};
-
 function PublicHomePage() {
 	return (
 		<>
