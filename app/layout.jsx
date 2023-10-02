@@ -13,8 +13,11 @@ export const metadata = {
 	description:
 		"At Chioma Onwenonye foundation, we believe in making a positive impact, one step at a time. Our foundation is built on the pillars of compassion, empowerment, and change. With a heartfelt commitment to bettering the world around us, we are dedicated to creating a brighter future for all",
 	keywords: ["children", "Poor", "Charity", "Helping"],
-	metadataBase: new URL("https://acme.com"),
+	metadataBase: new URL(process.env.NEXT_PUBLIC_URL),
 	themeColor: "#284FFB",
+	openGraph: {
+		images: "/images/cover.png",
+	},
 };
 
 export default function RootLayout({ children }) {
