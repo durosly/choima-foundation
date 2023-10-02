@@ -4,12 +4,16 @@ import { handleError } from "@/lib/handleError";
 import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { useSearchParams } from "next/navigation";
 
 function MailerForm() {
+	const searchParams = useSearchParams();
+	const user = searchParams.get("user");
+	const email = searchParams.get("email");
 	const [data, setData] = useState({
-		email: "",
+		email: email || "",
 		message: "",
-		username: "",
+		username: user || "",
 		title: "",
 	});
 	const [isLoading, setIsLoading] = useState(false);
