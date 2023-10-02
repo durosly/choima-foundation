@@ -500,7 +500,7 @@ function PublicHomePage() {
 				}}
 				className="text-center py-20 px-10 space-y-5 bg-no-repeat bg-cover bg-center text-white"
 			>
-				<h2 className="text-4xl font-bold">Your Donate Matters</h2>
+				<h2 className="text-4xl font-bold">Your Donation Matters</h2>
 				<p>
 					We rely on generous donations and sponsorships from people
 					like you who share our vision of creating a better world.
