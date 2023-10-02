@@ -23,12 +23,12 @@ function AboutUsPage() {
 
 			<div className="text-center px-10 py-20 sm:p-20">
 				<h2 className="text-4xl sm:text-6xl font-bold">
-					We are here to help
+					Making a Difference Together
 				</h2>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Tempore natus magni ratione ipsa rem enim sit quod officia
-					ipsam laborum!
+					Dedicated to making a positive impact on the world. Our
+					mission is to empower individuals and communities, providing
+					the support and resources they need to thrive.
 				</p>
 			</div>
 
@@ -48,34 +48,46 @@ function AboutUsPage() {
 					</div>
 					<div className="flex-1">
 						<h3 className="text-4xl font-bold">
-							The struggle was real
+							The Struggle to Make a Difference
 						</h3>
 						<div className="space-y-3 my-5">
 							<p>
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Ex, quidem totam sit ad
-								quaerat voluptates perspiciatis fugiat hic
-								provident consequatur suscipit obcaecati odio, a
-								veritatis atque enim dignissimos, quae saepe.
+								In the early days, the journey to establish
+								Choima Foundation was far from easy. It began
+								with a simple yet powerful idea: to make a
+								meaningful impact on the world and uplift those
+								in need. But turning that vision into reality
+								was a formidable challenge.
 							</p>
 							<p>
-								Lorem ipsum dolor sit, amet consectetur
-								adipisicing elit. Atque quibusdam eum voluptatem
-								minima quaerat vitae sunt quisquam nulla
-								reprehenderit, corporis culpa nam. Autem, fuga
-								soluta? Aliquid mollitia quo commodi quis
-								laudantium suscipit dolorum ipsum deserunt
-								adipisci excepturi modi saepe doloremque atque
-								omnis doloribus tenetur labore, praesentium
-								maiores. Dolor, laboriosam quibusdam?
+								The path was marked by numerous obstacles and
+								setbacks, each one a testament to the magnitude
+								of the mission. Financial constraints,
+								bureaucratic hurdles, and doubts from some
+								quarters made the struggle very real. But the
+								founders were undeterred, fueled by an
+								unwavering commitment to their cause.
 							</p>
 							<p>
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Dicta provident dolorem
-								temporibus, itaque reprehenderit rerum ipsum
-								voluptatum veritatis cumque sint.
+								Through perseverance, dedication, and the
+								support of like-minded individuals, Chioma
+								Foundation slowly but steadily gained momentum.
+								It grew from a small idea into a full-fledged
+								organization, determined to bring positive
+								change to communities and lives around the
+								world.
+							</p>
+							<p>
+								Today, Choima Foundation stands as a testament
+								to the power of determination and the belief
+								that even the most significant challenges can be
+								overcome when people come together with a shared
+								purpose. The struggle was real, but so was the
+								passion to make a difference, and that passion
+								continues to drive us forward.
 							</p>
 						</div>
+
 						<div>
 							<p className="font-bold">Chioma Onwenonye</p>
 							<p className="text-xs italic">CEO/Founder</p>
@@ -88,29 +100,60 @@ function AboutUsPage() {
 				<div className="flex-1 border border-l-0 p-10 space-y-4">
 					<h2 className="text-3xl font-bold">Our Mission</h2>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing
-						elit. Ea minus autem temporibus at eligendi, eius
-						explicabo. Nostrum assumenda tempora vitae!
+						At Chioma Foundation, our mission is to make a
+						meaningful and lasting impact on the world. We are
+						dedicated to addressing some of the most pressing
+						challenges that our global community faces, and we do so
+						with a deep sense of purpose and commitment.
+					</p>
+					<p>
+						Our mission is not just a statement; it&apos;s a driving
+						force that guides everything we do. We strive to create
+						positive change by providing support, resources, and
+						solutions where they are needed most.
 					</p>
 					<ul className="list-disc list-inside">
-						<li>Lorem, ipsum.</li>
-						<li>Quisquam, dolores.</li>
-						<li>Qui, commodi?</li>
-						<li>Deserunt, minus.</li>
+						<li>Empowering individuals and communities.</li>
+						<li>Promoting education and healthcare access.</li>
+						<li>
+							Protecting the environment and natural resources.
+						</li>
+						<li>Advocating for social justice and equality.</li>
 					</ul>
 				</div>
 				<div className="flex-1 bg-primary/10 p-10 space-y-4">
-					<h2 className="text-3xl font-bold">Our Vission</h2>
+					<h2 className="text-3xl font-bold">Our Vision</h2>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing
-						elit. Ea minus autem temporibus at eligendi, eius
-						explicabo. Nostrum assumenda tempora vitae!
+						Our vision at Chioma Foundation is a world where hope,
+						opportunity, and well-being are accessible to all. We
+						envision a future where our mission has been realized,
+						and communities thrive, individuals prosper, and the
+						planet flourishes.
+					</p>
+					<p>
+						To achieve this vision, we work tirelessly, guided by
+						our values of compassion, integrity, and innovation. We
+						believe in a world where collaboration and unity are the
+						driving forces behind progress, and we are committed to
+						being a catalyst for positive change.
 					</p>
 					<ul className="list-disc list-inside">
-						<li>Lorem, ipsum.</li>
-						<li>Quisquam, dolores.</li>
-						<li>Qui, commodi?</li>
-						<li>Deserunt, minus.</li>
+						<li>
+							A world where every child has access to quality
+							education.
+						</li>
+						<li>
+							A world where healthcare is a basic right, not a
+							privilege.
+						</li>
+						<li>
+							A world where the environment is protected for
+							future generations.
+						</li>
+						<li>
+							A world where social justice and equality are
+							upheld.
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -222,32 +265,52 @@ function AboutUsPage() {
 				<div className="flex-1 space-y-5">
 					<h2 className="flex gap-1 items-center text-primary">
 						<LuHexagon className="w-5 h-5" />
-						TEAM WORK
+						TEAMWORK
 					</h2>
 					<h3 className="font-bold text-2xl sm:text-4xl">
-						If we Helping Each other then the world growing.
+						Empowering the World Through Collaborative Efforts
 					</h3>
 					<div className="space-y-3">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Possimus nulla mollitia incidunt assumenda
-							necessitatibus ratione delectus, perferendis ab
-							suscipit nemo nesciunt hic nihil error? Veritatis,
-							officiis amet. Eius laborum soluta nobis magni
-							debitis, facere magnam possimus ratione. Dolore,
-							nostrum tempora ipsa atque repellat laudantium
-							recusandae qui voluptatem aliquam, fugiat ducimus.
+							We firmly believe in the power of teamwork and
+							collaboration as catalysts for positive change. Our
+							mission is to empower individuals, communities, and
+							organizations to work together, transcending
+							boundaries, and addressing some of the world&apos;s
+							most pressing challenges.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Sit qui quidem adipisci cum ea! Porro fugit
-							cupiditate obcaecati ullam natus!
+							Collaboration is at the heart of our
+							foundation&apos;s philosophy. We understand that the
+							world&apos;s problems are complex and
+							interconnected, and they require collective action.
+							Through strategic partnerships, innovative
+							solutions, and a shared commitment to making a
+							difference, we strive to create a better future for
+							all.
+						</p>
+						<p>
+							Our collaborative efforts span a wide range of
+							initiatives, from healthcare and education to
+							environmental conservation and social empowerment.
+							We bring together experts, volunteers, and
+							stakeholders from diverse backgrounds, fostering an
+							environment where ideas flourish, knowledge is
+							shared, and impactful projects are born.
+						</p>
+						<p>
+							By harnessing the collective wisdom and resources of
+							our global network, we aim to leave a lasting legacy
+							of positive change. Together, we envision a world
+							where teamwork is the driving force behind progress,
+							where every challenge is an opportunity, and where
+							the power of collaboration knows no bounds.
 						</p>
 					</div>
 				</div>
 			</div>
 
-			<div className="px-10">
+			{/* <div className="px-10">
 				<div>
 					<h2 className="text-xl">
 						<LuNewspaper className="inline-block stroke-indigo-700" />{" "}
@@ -419,7 +482,7 @@ function AboutUsPage() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 }

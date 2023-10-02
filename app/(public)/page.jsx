@@ -37,12 +37,12 @@ function PublicHomePage() {
 							</span>
 						</h1>
 						<p className="mb-5 backdrop-blur p-5 border rounded-2xl">
-							At Chioma Onwenonye foundation, we believe in making
-							a positive impact, one step at a time. Our
-							foundation is built on the pillars of compassion,
-							empowerment, and change. With a heartfelt commitment
-							to bettering the world around us, we are dedicated
-							to creating a brighter future for all.
+							An organisation for change, providing care and
+							support to over 20 communities with 5 years to our
+							journey. We believe in making a positive impact, one
+							step at a time. With a heartfelt commitment to
+							bettering the world around us, we are dedicated to
+							creating a brighter future for all.
 						</p>
 						<div className="flex flex-wrap gap-2 justify-center">
 							<Link
@@ -68,9 +68,10 @@ function PublicHomePage() {
 					</div>
 					<h2 className="text-xl font-bold text-center">Education</h2>
 					<p className="text-sm ">
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Explicabo reprehenderit magnam, cupiditate sequi
-						repellendus nemo sapiente porro unde beatae rerum!
+						By supporting us, you contribute towards providing
+						quality education and empowering children with knowledge
+						for a better tomorrow. Remember, education is the key to
+						breaking the cycle of poverty.
 					</p>
 				</div>
 				<div className="sm:w-[calc(50%-1.25rem)] md:flex-1 flex flex-col gap-3 border p-5 rounded-2xl">
@@ -79,9 +80,9 @@ function PublicHomePage() {
 					</div>
 					<h2 className="text-xl font-bold text-center">Food</h2>
 					<p className="text-sm ">
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Explicabo reprehenderit magnam, cupiditate sequi
-						repellendus nemo sapiente porro unde beatae rerum!
+						Ensuring that nutritious meals reach those who need them
+						the most is our top-most priority. Join us in fighting
+						hunger and malnutrition.
 					</p>
 				</div>
 				<div className="sm:w-[calc(50%-1.25rem)] md:flex-1 flex flex-col gap-3 border p-5 rounded-2xl">
@@ -92,9 +93,11 @@ function PublicHomePage() {
 						Medical Care
 					</h2>
 					<p className="text-sm ">
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Explicabo reprehenderit magnam, cupiditate sequi
-						repellendus nemo sapiente porro unde beatae rerum!
+						Access to healthcare is a basic human right. Through our
+						foundation, we strive to improve healthcare services in
+						disadvantaged areas and your donations make it possible
+						for us to bring quality healthcare closer to those who
+						need it most.
 					</p>
 				</div>
 				<div className="sm:w-[calc(50%-1.25rem)] md:flex-1 flex flex-col gap-3 border p-5 rounded-2xl">
@@ -103,9 +106,9 @@ function PublicHomePage() {
 					</div>
 					<h2 className="text-xl font-bold text-center">Water</h2>
 					<p className="text-sm ">
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Explicabo reprehenderit magnam, cupiditate sequi
-						repellendus nemo sapiente porro unde beatae rerum!
+						Providing safe drinking water sources and sanitation
+						facilities to communities without access can be made
+						possible. Together, we can quench their thirst.
 					</p>
 				</div>
 			</div>
@@ -142,19 +145,17 @@ function PublicHomePage() {
 						ABOUT US
 					</h2>
 					<h3 className="font-bold text-2xl sm:text-4xl">
-						If we are Helping Each others Human then the world will
-						be always happy.
+						Our Mission: Promoting Global Happiness Through
+						Humanitarian Efforts
 					</h3>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Possimus nulla mollitia incidunt assumenda
-						necessitatibus ratione delectus, perferendis ab suscipit
-						nemo nesciunt hic nihil error? Veritatis, officiis amet.
-						Eius laborum soluta nobis magni debitis, facere magnam
-						possimus ratione. Dolore, nostrum tempora ipsa atque
-						repellat laudantium recusandae qui voluptatem aliquam,
-						fugiat ducimus.
+						At Chioma Foundation, we are driven by a profound belief
+						that if we come together to help one another, we can
+						create a world filled with happiness and prosperity. Our
+						foundation is dedicated to making a positive impact on
+						the lives of people around the globe.
 					</p>
+
 					<ul>
 						<li className="flex gap-1 items-center">
 							<LuCheck className="stroke-primary" />
@@ -206,13 +207,14 @@ function PublicHomePage() {
 						</div>
 						<div className="p-5 bg-primary/10 space-y-5">
 							<h2 className="font-bold text-2xl">
-								Build secure life for the poor
+								Build Secure and care-free life for the needy
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Asperiores esse quae veniam
-								ipsam mollitia eum sint tempora distinctio
-								temporibus repellendus!
+								Prioritizing the safety and well-being of the
+								communities we serve. Through our initiatives,
+								essential protection and security measures can
+								be given, ensuring lives can be lived without
+								fear
 							</p>
 							<div className="text-right">
 								<span className="badge badge-primary rounded-2xl">
@@ -235,14 +237,16 @@ function PublicHomePage() {
 						</div>
 						<div className="p-5 bg-secondary/10 space-y-5">
 							<h2 className="font-bold text-2xl">
-								Provide medical attention to all
+								Ensuring Access to Quality Healthcare for All
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Asperiores esse quae veniam
-								ipsam mollitia eum sint tempora distinctio
-								temporibus repellendus!
+								Our unwavering commitment is to provide
+								comprehensive medical attention to individuals
+								from all walks of life. We firmly believe that
+								everyone deserves access to quality healthcare
+								services.
 							</p>
+
 							<div className="text-right">
 								<span className="badge badge-secondary rounded-2xl">
 									Medical
@@ -267,11 +271,14 @@ function PublicHomePage() {
 								Every one deserves clean water
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Asperiores esse quae veniam
-								ipsam mollitia eum sint tempora distinctio
-								temporibus repellendus!
+								we are passionate about ensuring that every
+								individual has access to clean and safe drinking
+								water. We believe that access to clean water is
+								a basic human right, and we are committed to
+								making this a reality for communities around the
+								world.
 							</p>
+
 							<div className="text-right">
 								<span className="badge badge-primary rounded-2xl">
 									Water
@@ -293,14 +300,14 @@ function PublicHomePage() {
 						</div>
 						<div className="p-5 bg-accent/10 space-y-5">
 							<h2 className="font-bold text-2xl">
-								Skilled individuals provide more value to the
-								society
+								Nurturing Talents and Creating opportunities
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Asperiores esse quae veniam
-								ipsam mollitia eum sint tempora distinctio
-								temporibus repellendus!
+								Every individual has unique talents waiting to
+								be discovered. Our care foundation provides
+								opportunities for those in need, empowering them
+								to unleash their potential and create a brighter
+								future.
 							</p>
 							<div className="text-right">
 								<span className="badge badge-accent rounded-2xl">
@@ -326,10 +333,9 @@ function PublicHomePage() {
 								Feed the hungry
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Asperiores esse quae veniam
-								ipsam mollitia eum sint tempora distinctio
-								temporibus repellendus!
+								With your support, nutritious meals and access
+								to clean water for underserved communities can
+								be made possible.
 							</p>
 							<div className="text-right">
 								<span className="badge badge-primary rounded-2xl">
@@ -356,9 +362,10 @@ function PublicHomePage() {
 						More people, more impact
 					</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Corporis similique nulla ipsam molestias quas eaque
-						velit quibusdam ducimus voluptatum eos!
+						At Chioma Foundation, our mission is to make a
+						difference in the world. We believe that by coming
+						together, we can create a greater impact and bring about
+						positive change.
 					</p>
 					<div className="pr-5 space-y-5">
 						<div className="flex gap-5">
@@ -370,8 +377,10 @@ function PublicHomePage() {
 									Transparency
 								</h3>
 								<p>
-									Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Eos, minima?
+									At Chioma Foundation, transparency is at the
+									core of our values. We believe in open and
+									honest communication with our supporters,
+									partners, and beneficiaries.
 								</p>
 							</div>
 						</div>
@@ -382,8 +391,11 @@ function PublicHomePage() {
 							<div>
 								<h3 className="text-2xl font-bold">Strength</h3>
 								<p>
-									Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Eos, minima?
+									Chioma Foundation is committed to building
+									strength in our communities. Through our
+									programs and initiatives, we empower
+									individuals and communities to overcome
+									challenges and reach their full potential.
 								</p>
 							</div>
 						</div>
@@ -394,8 +406,10 @@ function PublicHomePage() {
 							<div>
 								<h3 className="text-2xl font-bold">Unity</h3>
 								<p>
-									Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Eos, minima?
+									Unity is the driving force behind Chioma
+									Foundation. We believe that when we come
+									together as a community, we can achieve
+									remarkable things.
 								</p>
 							</div>
 						</div>
@@ -486,17 +500,12 @@ function PublicHomePage() {
 				}}
 				className="text-center py-20 px-10 space-y-5 bg-no-repeat bg-cover bg-center text-white"
 			>
-				<h2 className="text-4xl font-bold">
-					Make a Statement In Support of The Society
-				</h2>
+				<h2 className="text-4xl font-bold">Your Donate Matters</h2>
 				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Minus blanditiis facere eius reiciendis velit, soluta
-					repellendus nam ad amet reprehenderit excepturi dolor
-					debitis molestias obcaecati perferendis id. Tenetur, earum.
-					Accusamus natus iure eligendi ducimus facere nobis provident
-					debitis eaque nam, qui ea aut ad aliquam doloremque,
-					corrupti quia, exercitationem nulla.
+					We rely on generous donations and sponsorships from people
+					like you who share our vision of creating a better world.
+					Your contributions directly assist our efforts to provide
+					critical resources and services to those in greatest need.
 				</p>
 				<Link
 					href="/support"
