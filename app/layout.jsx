@@ -22,6 +22,15 @@ export const metadata = {
 			"At Chioma Onwenonye foundation, we believe in making a positive impact, one step at a time. Our foundation is built on the pillars of compassion, empowerment, and change. With a heartfelt commitment to bettering the world around us, we are dedicated to creating a brighter future for all",
 		url: process.env.NEXT_PUBLIC_URL,
 		siteName: "Chioma Onwenonye foundation",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Chioma Foundation",
+		description:
+			"At Chioma Onwenonye foundation, we believe in making a positive impact, one step at a time. Our foundation is built on the pillars of compassion, empowerment, and change. With a heartfelt commitment to bettering the world around us, we are dedicated to creating a brighter future for all",
+
+		images: ["/images/cover.png"],
 	},
 };
 
