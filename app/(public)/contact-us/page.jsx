@@ -41,7 +41,7 @@ function ContactUsPage() {
 							<div>
 								<h3 className="font-bold mb-2">Email Us</h3>
 								<p className="capitalize text-sm">
-									support@nice.com
+									team@chiomafoundation.com
 								</p>
 							</div>
 						</div>

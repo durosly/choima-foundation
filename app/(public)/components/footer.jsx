@@ -37,17 +37,17 @@ function Footer() {
 				<nav>
 					<header className="footer-title">Contact Us</header>
 					<a
-						href="tel: +234734568904"
+						href="tel:+234734568904"
 						className="link link-hover inline-flex gap-2 items-center"
 					>
 						<LuPhone className=" stroke-current" /> +234734568904
 					</a>
 					<a
-						href="mailto: support@nice.com"
+						href="mailto: team@chiomafoundation.com"
 						className="link link-hover inline-flex gap-2 items-center"
 					>
 						<LuMail className="stroke-current" />
-						support@nice.com
+						team@chiomafoundation.com
 					</a>
 					<a className=" inline-flex gap-2 items-center">
 						<LuMapPin className="stroke-current" />

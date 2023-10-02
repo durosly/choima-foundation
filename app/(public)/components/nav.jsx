@@ -17,7 +17,7 @@ function NavBar() {
 						+2348111461988
 					</a>
 				</div>
-				<a href="mailto: support@nice.com">
+				<a href="mailto: team@chiomafoundation.com">
 					<LuMail className="w-5 h-5 stroke-white" />
 				</a>
 				<Link
