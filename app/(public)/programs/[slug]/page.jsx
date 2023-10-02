@@ -6,6 +6,8 @@ import ProgramModel from "@/models/program";
 import convertTo12HourFormat from "@/lib/formatTime";
 import { DateTime } from "luxon";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({ params: { slug } }) {
 	await connectMongo();
 

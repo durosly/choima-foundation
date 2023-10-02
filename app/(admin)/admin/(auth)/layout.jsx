@@ -8,6 +8,8 @@ import {
 } from "react-icons/lu";
 import LogoutButton from "./components/logout-btn";
 
+export const dynamic = "force-dynamic";
+
 function AdminLayout({ children }) {
 	return (
 		<div className="drawer max-sm:block  lg:drawer-open">

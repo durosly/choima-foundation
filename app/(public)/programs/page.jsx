@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import { LuCalendar, LuClock5, LuGrip, LuMapPin } from "react-icons/lu";
-import ExistingPrograms from "./components/existing-programs";
 import CoverImage from "../components/cover";
+import ExistingPrograms from "./components/existing-programs";
+
+export const dynamic = "force-dynamic";
 
 export const metadata = {
 	title: "Programs",
