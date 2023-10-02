@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { LuPanelLeftOpen } from "react-icons/lu";
+import {
+	LuCalendarDays,
+	LuLineChart,
+	LuMail,
+	LuMailbox,
+	LuPanelLeftOpen,
+} from "react-icons/lu";
 import LogoutButton from "./components/logout-btn";
 
 function AdminLayout({ children }) {
@@ -30,16 +36,28 @@ function AdminLayout({ children }) {
 				<ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
 					{/* Sidebar content here */}
 					<li>
-						<Link href="/admin/dashboard">Dashbaord</Link>
+						<Link href="/admin/dashboard">
+							<LuLineChart />
+							Dashbaord
+						</Link>
 					</li>
 					<li>
-						<Link href="/admin/programs">Programs</Link>
+						<Link href="/admin/programs">
+							<LuCalendarDays />
+							Programs
+						</Link>
 					</li>
 					<li>
-						<Link href="/admin/messages">Messages</Link>
+						<Link href="/admin/messages">
+							<LuMailbox />
+							Messages
+						</Link>
 					</li>
 					<li>
-						<Link href="/admin/mailer">Mailer</Link>
+						<Link href="/admin/mailer">
+							<LuMail />
+							Mailer
+						</Link>
 					</li>
 					<li>
 						<LogoutButton />
