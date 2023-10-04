@@ -1,5 +1,6 @@
 "use client";
 
+import { handleError } from "@/lib/handleError";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -40,7 +41,7 @@ function StatusBtn({ status, id }) {
 			} `}
 			disabled={isLoading}
 			onClick={() =>
-				updateStatus(status === "publish" ? "unpublished" : "publish")
+				updateStatus(status === "publish" ? "unpublish" : "publish")
 			}
 		>
 			{status === "publish" ? "unpublish" : "publish"}

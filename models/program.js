@@ -59,9 +59,9 @@ const ProgramValidationSchema = z.object({
 	desc: z.string().min(5),
 	location: z.string().min(2),
 	start_date: z.string().min(2),
-	end_date: z.string().min(2),
+	end_date: z.string().optional(),
 	start_time: z.string().min(2),
-	end_time: z.string().min(2),
+	end_time: z.string().optional(),
 });
 
 export { ProgramValidationSchema };

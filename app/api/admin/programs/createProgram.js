@@ -30,6 +30,7 @@ async function createProgram(request) {
 
 		return NextResponse.json({ status: true, message: "success" });
 	} catch (error) {
+		console.log(error.message);
 		return new Response(
 			JSON.stringify({
 				status: false,

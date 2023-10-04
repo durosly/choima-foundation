@@ -9,7 +9,10 @@ import convertTo12HourFormat from "@/lib/formatTime";
 import StatusBtn from "./components/status-btn";
 import DeleteBtn from "./components/delete-btn";
 
+export const dynamic = "force-dynamic";
+
 async function AdminProgramsDetailsPage({ params: { id } }) {
+	console.log({ id });
 	await connectMongo();
 
 	const program = await ProgramModel.findById(id);

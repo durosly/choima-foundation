@@ -15,7 +15,6 @@ async function deleteMessages(request) {
 			message: "success",
 		});
 	} catch (error) {
-		console.log(error);
 		return new Response(JSON.stringify({ status: false, message: error }), {
 			status: 500,
 			headers: { "Content-Type": `application/json` },

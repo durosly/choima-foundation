@@ -30,7 +30,6 @@ async function createMessage(request) {
 
 		return NextResponse.json({ status: true, message: "Message sent" });
 	} catch (error) {
-		console.log(error.message);
 		return new Response(
 			JSON.stringify({
 				status: false,

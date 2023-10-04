@@ -9,13 +9,12 @@ export function NavigationEvents() {
 
 	useEffect(() => {
 		const url = `${pathname}?${searchParams}`;
-		console.log(url);
+
 		// You can now use the current URL
 		if (typeof window !== "undefined") {
 			const navCheckbox = document.querySelector("#my-drawer-3");
 
 			if (navCheckbox.checked) {
-				// console.log("checked");
 				navCheckbox.checked = false;
 			}
 		}

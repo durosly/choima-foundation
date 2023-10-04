@@ -33,7 +33,6 @@ function MailerForm() {
 				throw new Error(response.data.message);
 			}
 		} catch (error) {
-			console.log(error);
 			const message = handleError(error);
 			toast.error(message, { id: toastId });
 		} finally {
