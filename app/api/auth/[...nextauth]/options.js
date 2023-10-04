@@ -30,7 +30,7 @@ export const options = {
 			async authorize(credentials) {
 				await connectMongo();
 				// Add logic here to look up the user from the credentials supplied
-				// console.log(credentials);
+
 				// const { email, password } = credentials
 				const user = await UserModel.findOne({
 					email: credentials?.email,
@@ -44,12 +44,6 @@ export const options = {
 				// };
 
 				if (user) {
-					// console.log({ user });
-					// if (!user.is_verified) {
-					// 	throw new Error("E-mail is not verified");
-					// }
-					// console.log('nice');
-
 					const valid = bcrypt.compareSync(
 						credentials?.password || "",
 						user.password

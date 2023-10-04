@@ -31,7 +31,6 @@ async function getMessages(request) {
 			data,
 		});
 	} catch (error) {
-		console.log(error);
 		return new Response(JSON.stringify({ status: false, message: error }), {
 			status: 500,
 			headers: { "Content-Type": `application/json` },
