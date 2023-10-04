@@ -48,10 +48,10 @@ function Footer() {
 				<nav>
 					<header className="footer-title">Contact Us</header>
 					<a
-						href="tel:+234734568904"
+						href="tel:+2348111461988"
 						className="link link-hover inline-flex gap-2 items-center"
 					>
-						<LuPhone className=" stroke-current" /> +234734568904
+						<LuPhone className=" stroke-current" /> +2348111461988
 					</a>
 					<a
 						href="mailto: team@chiomafoundation.com"
