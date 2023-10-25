@@ -41,7 +41,7 @@ function SupportPage() {
 							<p className="flex flex-wrap gap-2 text-sm">
 								<span>Address:</span>
 								<span>
-									bc1q7ujlzr7vkynwwnfsh3t3vu4jwanmquetjll2v4
+									bc1qt7d2q50lzlkue0fwqcja4u4kr43eutsz9gjlja
 								</span>
 							</p>
 						</div>
