@@ -25,7 +25,7 @@ async function getPrograms(request) {
 
 		const data = await ProgramModel.paginate(query, {
 			page,
-			sort: { created_at: -1 },
+			sort: { start_date: -1, start_time: 1 },
 		});
 
 		return NextResponse.json({
