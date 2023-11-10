@@ -227,7 +227,7 @@ function PublicHomePage() {
 						<div className=" h-48 relative">
 							<Image
 								fill
-								src="https://images.pexels.com/photos/4021779/pexels-photo-4021779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 								alt=""
 								className="object-cover"
 							/>
@@ -351,7 +351,7 @@ function PublicHomePage() {
 				<div className="flex-1 relative overflow-hidden">
 					<Image
 						fill
-						src="https://images.pexels.com/photos/2962135/pexels-photo-2962135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						src="https://images.pexels.com/photos/4427611/pexels-photo-4427611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 						alt=""
 						className="object-cover"
 					/>
