@@ -20,7 +20,10 @@ async function getPrograms(request) {
 			query.$text = { $search: `\"${q}\"` };
 		}
 
-		const data = await ProgramModel.paginate(query, { page });
+		const data = await ProgramModel.paginate(query, {
+			page,
+			sort: { start_date: -1, start_time: 1 },
+		});
 
 		return NextResponse.json({
 			status: true,
