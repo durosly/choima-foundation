@@ -515,6 +515,16 @@ function PublicHomePage() {
 				</Link>
 			</div>
 			<div className="py-10 px-5 text-center">
+				<iframe
+					// width="560"
+					// height="315"
+					className="w-[80%] max-w-[560px] aspect-video mx-auto"
+					src="https://www.youtube.com/embed/ug-M2Gcyb2g?si=MPEFPrZ03lsD51rE"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
 				<p className="text-2xl rounded-xl italic border border-dashed inline-block p-5">
 					A helping hand can be a ray of sunshine in a cloudy world.
 				</p>
