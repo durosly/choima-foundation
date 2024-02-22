@@ -5,6 +5,10 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport = {
+	themeColor: "#284FFB",
+};
+
 export const metadata = {
 	title: {
 		template: "%s | Chioma Foundation ",
@@ -14,7 +18,7 @@ export const metadata = {
 		"At Chioma Onwenonye foundation, we believe in making a positive impact, one step at a time. Our foundation is built on the pillars of compassion, empowerment, and change. With a heartfelt commitment to bettering the world around us, we are dedicated to creating a brighter future for all",
 	keywords: ["children", "Poor", "Charity", "Helping"],
 	metadataBase: new URL(process.env.NEXT_PUBLIC_URL),
-	themeColor: "#284FFB",
+
 	openGraph: {
 		images: "/images/cover.png",
 		title: "Chioma Foundation",
