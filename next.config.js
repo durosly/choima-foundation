@@ -17,7 +17,6 @@ const nextConfig = {
 		],
 		deviceSizes: [640, 750, 828, 1080, 1200],
 	},
-	transpilePackages: ["@react-email"],
 };
 
 module.exports = nextConfig;
