@@ -118,14 +118,14 @@ function PublicHomePage() {
 						<div className="relative overflow-hidden w-full rounded-full aspect-square">
 							<Image
 								fill
-								src="https://images.pexels.com/photos/1250452/pexels-photo-1250452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								src="/images/vision.jpg"
 								alt=""
 							/>
 						</div>
 						<div className="absolute w-1/3 aspect-square rounded-full border-4 overflow-hidden bottom-0 right-10">
 							<Image
 								fill
-								src="https://images.pexels.com/photos/2113709/pexels-photo-2113709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								src="/images/vision-alt.jpg"
 								alt=""
 								className="object-cover"
 							/>
@@ -351,7 +351,7 @@ function PublicHomePage() {
 				<div className="flex-1 relative overflow-hidden">
 					<Image
 						fill
-						src="https://images.pexels.com/photos/4427611/pexels-photo-4427611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						src="/images/more-people.jpg"
 						alt=""
 						className="object-cover"
 					/>
@@ -521,9 +521,9 @@ function PublicHomePage() {
 					className="w-[80%] max-w-[560px] aspect-video mx-auto"
 					src="https://www.youtube.com/embed/ug-M2Gcyb2g?si=MPEFPrZ03lsD51rE"
 					title="YouTube video player"
-					frameborder="0"
+					frameBorder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
+					allowFullScreen
 				></iframe>
 				<p className="text-2xl rounded-xl italic border border-dashed inline-block p-5">
 					A helping hand can be a ray of sunshine in a cloudy world.
