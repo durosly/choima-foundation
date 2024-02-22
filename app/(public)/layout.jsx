@@ -4,11 +4,14 @@ import LinksWrapper from "./components/links-container";
 import Footer from "@/app/(public)/components/footer";
 import logo from "@/public/images/logo.png";
 import { NavigationEvents } from "./components/navigation-event";
+import { Suspense } from "react";
 
 export default function PublicLayout({ children }) {
 	return (
 		<div className="drawer">
-			<NavigationEvents />
+			<Suspense>
+				<NavigationEvents />
+			</Suspense>
 			<input
 				id="my-drawer-3"
 				type="checkbox"
